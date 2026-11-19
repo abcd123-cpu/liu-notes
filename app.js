@@ -64,6 +64,9 @@
     $("#total-minutes").textContent = minutes ? `已填 ${minutes.toLocaleString("zh-CN")} 分钟${list.some(unknownTime) ? " · 部分时长未填" : "的专注"}` : "从第一分钟开始";
     $("#week-caption").textContent = `本周已有 ${week.length} 天留下记录`;
     $("#week-total").textContent = `共 ${weekMinutes} 分钟`;
+    $("#week-range").textContent = `${weekStart.replaceAll("-", ".")} — ${shift(weekStart, 6).replaceAll("-", ".")}`;
+    $("#week-view-hours").textContent = `${hours(weekMinutes)} 小时`;
+    $("#week-view-days").textContent = `${week.length} 天记录${week.some(unknownTime) ? " · 部分时长未填" : ""}`;
     $("#last-update").textContent = list.length ? `最近更新 · ${list[0].date}` : "学习足迹，慢慢积累";
     const dailyMinutes = Array.from({ length: 7 }, (_, i) => total(week.find(entry => entry.date === shift(weekStart, i))));
     const max = Math.max(...dailyMinutes, 1);
@@ -96,7 +99,7 @@
     $("#daily-empty").hidden = Boolean(entry);
     $("#subject-grid").replaceChildren(...subjects.map(subject => {
       const record = entry?.subjects[subject.key];
-      const card = el("article", "subject-card"), top = el("div", "subject-top"), heading = el("div");
+      const card = el("article", `subject-card${active(record) ? "" : " subject-empty"}`), top = el("div", "subject-top"), heading = el("div");
       heading.append(el("h3", "", subject.name), el("small", "", subject.en));
       top.append(el("span", `subject-icon ${subject.color}`, subject.icon), heading, el("span", "subject-time", record?.minutes === null ? "未提供时长" : `${record?.minutes || 0} 分钟`)); card.append(top);
       if (record?.items.length) {
@@ -125,7 +128,10 @@
   function selectDate(date, scroll = false) {
     if (!validDate(date) || date > today || date < "2000-01-01") return;
     selected = date; month = date.slice(0, 7); renderDay(); renderCalendar();
-    if (scroll) $("#daily").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    if (scroll) {
+      if (phoneLayout.matches) navigateMobile("daily");
+      else $("#daily").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    }
   }
   function renderCalendar() {
     const first = new Date(utc(month + "-01"));
@@ -166,6 +172,43 @@
     if (!nodes.length) { const empty = el("div", "history-empty"); empty.append(el("span", "", "✧"), el("p", "", query || filter !== "all" ? "没有找到这条足迹，试试其他关键词。" : "学习足迹会在这里慢慢积累。每一小步，都算数。")); nodes.push(empty); }
     $("#history-list").replaceChildren(...nodes); $("#load-more").hidden = matching.length <= limit;
   }
+
+  // Only phones use separate views. Desktop keeps the complete dashboard.
+  const phoneLayout = matchMedia("(max-width: 760px)");
+  const viewTitles = { overview: "#welcome-title", daily: "#daily-title", week: "#week-view-title", history: "#history-title" };
+  const viewFromHash = () => Object.hasOwn(viewTitles, location.hash.slice(1)) ? location.hash.slice(1) : "overview";
+  function syncMobileView(focus = false) {
+    const view = viewFromHash();
+    document.body.dataset.mobilePage = view;
+    document.querySelectorAll("[data-nav-view]").forEach(link => {
+      const current = link.dataset.navView === (phoneLayout.matches ? view : "overview");
+      link.classList.toggle("active", current);
+      if (current) link.setAttribute("aria-current", "page");
+      else link.removeAttribute("aria-current");
+    });
+    if (phoneLayout.matches && focus) {
+      $(viewTitles[view]).focus({ preventScroll: true });
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
+  }
+  function navigateMobile(view) {
+    if (location.hash !== `#${view}`) location.hash = view;
+    syncMobileView(true);
+  }
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    const view = link.getAttribute("href").slice(1);
+    if (!Object.hasOwn(viewTitles, view)) return;
+    link.addEventListener("click", event => {
+      if (!phoneLayout.matches || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      // The Today navigation always returns to today's journal after viewing an older day.
+      if (view === "daily") selectDate(today);
+      navigateMobile(view);
+    });
+  });
+  window.addEventListener("hashchange", () => syncMobileView(true));
+  phoneLayout.addEventListener("change", () => syncMobileView(true));
+  syncMobileView();
 
   function renderAll() { renderCountdown(); renderStats(); renderDay(); renderCalendar(); renderHistory(); }
   $("#day-picker").max = today;

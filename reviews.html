@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#f5f7f8">
   <meta name="description" content="收藏每周的学习回顾与下周建议，回看每一个阶段的积累。"><title>本周回顾和下周建议 · 向前一点</title>
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css?v=20261119-mobile"><link rel="stylesheet" href="./mobile.css?v=20261119">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./styles.css?v=20261119-tabs"><link rel="stylesheet" href="./mobile.css?v=20261119-tabs">
   <script src="./data/study-data.js" defer></script><script src="./reviews.js?v=20261119-live" defer></script>
 </head>
 <body>
@@ -12,9 +12,11 @@
     <a class="brand" href="./"><span class="brand-icon" aria-hidden="true">✳</span><span>向前一点<small>A LITTLE EVERY DAY</small></span></a>
     <p class="nav-label">我的学习空间</p>
     <nav aria-label="主导航">
-      <a class="nav-item" href="./index.html#overview" aria-label="学习概览"><span aria-hidden="true">◫</span><span class="nav-copy">学习概览</span><span class="nav-short" aria-hidden="true">学习概览</span></a>
-      <a class="nav-item active" href="./reviews.html" aria-label="本周回顾和下周建议" aria-current="page" title="本周回顾和下周建议"><span aria-hidden="true">▤</span><span class="nav-copy">本周回顾<br>和下周建议</span><span class="nav-short" aria-hidden="true">每周回顾</span></a>
-    </nav>
+<a class="nav-item" href="./index.html#overview" data-nav-view="overview" aria-label="学习概览"><span aria-hidden="true">◫</span><span class="nav-copy">学习概览</span><span class="nav-short" aria-hidden="true">总览</span></a>
+<a class="nav-item mobile-only-nav" href="./index.html#daily" data-nav-view="daily" aria-label="今天"><span aria-hidden="true">◷</span><span class="nav-copy">今天</span><span class="nav-short" aria-hidden="true">今天</span></a>
+<a class="nav-item mobile-only-nav" href="./index.html#week" data-nav-view="week" aria-label="本周"><span aria-hidden="true">▥</span><span class="nav-copy">本周</span><span class="nav-short" aria-hidden="true">本周</span></a>
+<a class="nav-item mobile-only-nav" href="./index.html#history" data-nav-view="history" aria-label="记录"><span aria-hidden="true">▦</span><span class="nav-copy">记录</span><span class="nav-short" aria-hidden="true">记录</span></a>
+<a class="nav-item active" href="./reviews.html" data-nav-view="reviews" aria-label="本周回顾和下周建议" aria-current="page"><span aria-hidden="true">▤</span><span class="nav-copy">本周回顾<br>和下周建议</span><span class="nav-short" aria-hidden="true">周报</span></a></nav>
     <div class="sidebar-note"><span class="sprout" aria-hidden="true">✳</span><p>回头看看来时路，<br>再慢慢走向下一周。</p><span>ONE WEEK AT A TIME</span></div>
     <div class="sidebar-bottom"><span class="small-spark" aria-hidden="true">✧</span><span>一段只属于你的旅程<small id="sidebar-exam">目标日 · 2027.03.20</small></span></div>
   </aside>

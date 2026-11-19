@@ -26,7 +26,7 @@ h1 span{display:inline-block}
 @media(max-width:600px){.plan-item{flex-wrap:wrap;gap:5px}.plan-item>span:last-child{width:100%}.weekly-review .panel-heading{align-items:flex-start}.weekly-review .mood{white-space:nowrap}.weekly-review h2{font-size:18px}}
 
 /* Weekly archive shares the quiet study-space palette. */
-.nav-short,.mobile-week-picker,.mobile-title{display:none}
+.nav-short,.mobile-week-picker,.mobile-title,.mobile-week-summary,.mobile-week-link,.sidebar .mobile-only-nav{display:none}
 .reviews-hero .desktop-title{color:var(--ink)}
 .report-subject{display:inline-flex;gap:5px;align-items:baseline}.report-subject strong{font:inherit}
 .sidebar .nav-copy{font-size:14px;line-height:1.55;width:auto;white-space:normal;text-align:left;color:inherit}
