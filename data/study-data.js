@@ -69,7 +69,7 @@ window.STUDY_DATA = {
       "date": "2026-11-18",
       "subjects": {
         "english": {
-          "minutes": null,
+          "minutes": 210,
           "items": [
             {
               "text": "听瑞思拜的写作和翻译方法及模版",
@@ -94,7 +94,7 @@ window.STUDY_DATA = {
           "items": []
         },
         "math": {
-          "minutes": null,
+          "minutes": 300,
           "items": [
             {
               "text": "看讲义第三章的六个题型",
@@ -108,7 +108,7 @@ window.STUDY_DATA = {
         }
       },
       "plans": [],
-      "summary": "今天学习了英语写作翻译方法、模版和阅读，背诵作文模版；数学看讲义第三章六个题型并做例题。"
+      "summary": "今天学习英语210分钟，包括听写作翻译方法及模版、做两篇阅读、背作文模版；学习数学300分钟，看讲义第三章六个题型并做例题。"
     }
   ],
   "weeklyReview": null,
