@@ -52,10 +52,63 @@ window.STUDY_DATA = {
         },
         {
           "type": "study",
-          "text": "英语一套听力、三篇阅读、记记单词"
+          "text": "英语一套听力"
+        },
+        {
+          "type": "study",
+          "text": "英语三篇阅读"
+        },
+        {
+          "type": "study",
+          "text": "记记单词"
         }
       ],
       "summary": "今天学习英语三个半小时，做三篇阅读和一套听力；数学六个半小时，做第三章练习题并看第四章八个题型和例题。"
+    },
+    {
+      "date": "2026-11-18",
+      "subjects": {
+        "english": {
+          "minutes": null,
+          "items": [
+            {
+              "text": "听瑞思拜的写作和翻译方法及模版",
+              "done": null
+            },
+            {
+              "text": "做两篇阅读",
+              "done": null
+            },
+            {
+              "text": "背作文模版",
+              "done": null
+            }
+          ]
+        },
+        "theory": {
+          "minutes": 0,
+          "items": []
+        },
+        "practice": {
+          "minutes": 0,
+          "items": []
+        },
+        "math": {
+          "minutes": null,
+          "items": [
+            {
+              "text": "看讲义第三章的六个题型",
+              "done": null
+            },
+            {
+              "text": "做讲义例题",
+              "done": null
+            }
+          ]
+        }
+      },
+      "plans": [],
+      "summary": "今天学习了英语写作翻译方法、模版和阅读，背诵作文模版；数学看讲义第三章六个题型并做例题。"
     }
   ],
   "weeklyReview": null,
