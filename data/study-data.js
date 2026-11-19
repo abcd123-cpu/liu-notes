@@ -10,15 +10,11 @@ window.STUDY_DATA = {
           "minutes": 210,
           "items": [
             {
-              "text": "听瑞思拜的写作和翻译方法+模版",
+              "text": "三篇阅读(总共错了6个)",
               "done": null
             },
             {
-              "text": "做两篇阅读",
-              "done": null
-            },
-            {
-              "text": "背作文模版",
+              "text": "一套听力(对了一半)",
               "done": null
             }
           ]
@@ -32,21 +28,34 @@ window.STUDY_DATA = {
           "items": []
         },
         "math": {
-          "minutes": 300,
+          "minutes": 390,
           "items": [
             {
-              "text": "看讲义第三章的六个题型",
+              "text": "第三章练习题(有一个大题算错了)",
               "done": null
             },
             {
-              "text": "做讲义例题",
+              "text": "第四章的八个题型和例题",
               "done": null
             }
           ]
         }
       },
-      "plans": [],
-      "summary": "今日学习英语210分钟，包括听写作翻译方法与模版、做两篇阅读、背作文模版；学习数学300分钟，看讲义第三章六个题型并做例题。"
+      "plans": [
+        {
+          "type": "study",
+          "text": "数学第四章练习题做一下"
+        },
+        {
+          "type": "study",
+          "text": "不定积分概念题型学一下"
+        },
+        {
+          "type": "study",
+          "text": "英语一套听力、三篇阅读、记记单词"
+        }
+      ],
+      "summary": "今天学习英语三个半小时，做三篇阅读和一套听力；数学六个半小时，做第三章练习题并看第四章八个题型和例题。"
     }
   ],
   "weeklyReview": null,
