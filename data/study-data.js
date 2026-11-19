@@ -2,7 +2,53 @@
 window.STUDY_DATA = {
   "version": 1,
   "examDate": "2027-03-20",
-  "entries": [],
+  "entries": [
+    {
+      "date": "2026-11-19",
+      "subjects": {
+        "english": {
+          "minutes": 210,
+          "items": [
+            {
+              "text": "听瑞思拜的写作和翻译方法+模版",
+              "done": null
+            },
+            {
+              "text": "做两篇阅读",
+              "done": null
+            },
+            {
+              "text": "背作文模版",
+              "done": null
+            }
+          ]
+        },
+        "theory": {
+          "minutes": 0,
+          "items": []
+        },
+        "practice": {
+          "minutes": 0,
+          "items": []
+        },
+        "math": {
+          "minutes": 300,
+          "items": [
+            {
+              "text": "看讲义第三章的六个题型",
+              "done": null
+            },
+            {
+              "text": "做讲义例题",
+              "done": null
+            }
+          ]
+        }
+      },
+      "plans": [],
+      "summary": "今日学习英语210分钟，包括听写作翻译方法与模版、做两篇阅读、背作文模版；学习数学300分钟，看讲义第三章六个题型并做例题。"
+    }
+  ],
   "weeklyReview": null,
   "weeklyReviews": []
 };
