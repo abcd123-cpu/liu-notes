@@ -4,6 +4,56 @@ window.STUDY_DATA = {
   "examDate": "2027-03-20",
   "entries": [
     {
+      "date": "2026-11-20",
+      "subjects": {
+        "english": {
+          "minutes": 180,
+          "items": [
+            {
+              "text": "两篇阅读(总共错了1个)",
+              "done": null
+            },
+            {
+              "text": "一套听力(对了10个)",
+              "done": null
+            }
+          ]
+        },
+        "theory": {
+          "minutes": 0,
+          "items": []
+        },
+        "practice": {
+          "minutes": 0,
+          "items": []
+        },
+        "math": {
+          "minutes": 420,
+          "items": [
+            {
+              "text": "练习题4",
+              "done": null
+            },
+            {
+              "text": "不定积分那一部分",
+              "done": null
+            }
+          ]
+        }
+      },
+      "plans": [
+        {
+          "type": "study",
+          "text": "数学不定积分习题集的强化训练(尽量做完)➕中值定理那一部分"
+        },
+        {
+          "type": "study",
+          "text": "英语：一套听力➕三篇阅读➕背单词"
+        }
+      ],
+      "summary": "今天英语学习三小时，做两篇阅读和一套听力；数学学习七小时，做练习题4和不定积分部分。明天计划数学强化训练不定积分习题集和中值定理，英语做一套听力、三篇阅读并背单词。"
+    },
+    {
       "date": "2026-11-19",
       "subjects": {
         "english": {
