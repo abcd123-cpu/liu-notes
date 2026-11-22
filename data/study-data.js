@@ -4,6 +4,72 @@ window.STUDY_DATA = {
   "examDate": "2027-03-20",
   "entries": [
     {
+      "date": "2026-11-21",
+      "subjects": {
+        "english": {
+          "minutes": 180,
+          "items": [
+            {
+              "text": "一套听力(错了10个)",
+              "done": null
+            },
+            {
+              "text": "两篇阅读(错了3个)",
+              "done": null
+            },
+            {
+              "text": "记单词",
+              "done": null
+            }
+          ]
+        },
+        "theory": {
+          "minutes": 0,
+          "items": []
+        },
+        "practice": {
+          "minutes": 0,
+          "items": []
+        },
+        "math": {
+          "minutes": 420,
+          "items": [
+            {
+              "text": "练习题五",
+              "done": null
+            },
+            {
+              "text": "习题集不定积分强化训练的三分之一(明天接着写)",
+              "done": null
+            }
+          ]
+        }
+      },
+      "plans": [
+        {
+          "type": "study",
+          "text": "英语：一套听力"
+        },
+        {
+          "type": "study",
+          "text": "英语：两篇阅读"
+        },
+        {
+          "type": "study",
+          "text": "英语：记单词"
+        },
+        {
+          "type": "study",
+          "text": "数学：不定积分题目做完"
+        },
+        {
+          "type": "study",
+          "text": "数学：三大定理"
+        }
+      ],
+      "summary": "11月21日学习英语三小时（听力、阅读、记单词），数学七小时（练习题五、不定积分强化训练三分之一）；明日计划继续英语听力、阅读、记单词及数学不定积分和三大定理。"
+    },
+    {
       "date": "2026-11-20",
       "subjects": {
         "english": {
