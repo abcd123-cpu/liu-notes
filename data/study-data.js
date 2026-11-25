@@ -4,6 +4,130 @@ window.STUDY_DATA = {
   "examDate": "2027-03-20",
   "entries": [
     {
+      "date": "2026-11-24",
+      "subjects": {
+        "english": {
+          "minutes": 180,
+          "items": [
+            {
+              "text": "一套听力(错了13个)",
+              "done": null
+            },
+            {
+              "text": "两篇阅读",
+              "done": null
+            },
+            {
+              "text": "整理单词",
+              "done": null
+            }
+          ]
+        },
+        "theory": {
+          "minutes": 0,
+          "items": []
+        },
+        "practice": {
+          "minutes": 0,
+          "items": []
+        },
+        "math": {
+          "minutes": 390,
+          "items": [
+            {
+              "text": "中值定理练习题",
+              "done": null
+            },
+            {
+              "text": "定积分",
+              "done": null
+            }
+          ]
+        }
+      },
+      "plans": [
+        {
+          "type": "study",
+          "text": "英语：一套听力"
+        },
+        {
+          "type": "study",
+          "text": "英语：两篇阅读"
+        },
+        {
+          "type": "study",
+          "text": "英语：记单词"
+        },
+        {
+          "type": "study",
+          "text": "数学：定积分练习题"
+        },
+        {
+          "type": "study",
+          "text": "数学：定积分的应用"
+        }
+      ],
+      "summary": "今天学习英语三个小时，包括一套听力、两篇阅读和整理单词；学习数学六个半小时，包括中值定理练习题和定积分。"
+    },
+    {
+      "date": "2026-11-23",
+      "subjects": {
+        "english": {
+          "minutes": 180,
+          "items": [
+            {
+              "text": "一套听力(错了15个)",
+              "done": null
+            },
+            {
+              "text": "记整理过的单词",
+              "done": null
+            }
+          ]
+        },
+        "theory": {
+          "minutes": 0,
+          "items": []
+        },
+        "practice": {
+          "minutes": 0,
+          "items": []
+        },
+        "math": {
+          "minutes": 240,
+          "items": [
+            {
+              "text": "中值定理",
+              "done": null
+            }
+          ]
+        }
+      },
+      "plans": [
+        {
+          "type": "study",
+          "text": "英语：一套听力"
+        },
+        {
+          "type": "study",
+          "text": "英语：两篇阅读"
+        },
+        {
+          "type": "study",
+          "text": "英语：记单词"
+        },
+        {
+          "type": "study",
+          "text": "数学：练习题六"
+        },
+        {
+          "type": "study",
+          "text": "数学：习题集三大定理"
+        }
+      ],
+      "summary": "今天学习英语3小时，做了一套听力并记整理过的单词；学习数学4小时，内容为中值定理。明天计划学习英语听力和阅读、记单词，以及数学练习题和习题集三大定理。"
+    },
+    {
       "date": "2026-11-22",
       "subjects": {
         "english": {
@@ -285,6 +409,68 @@ window.STUDY_DATA = {
       "summary": "今天学习英语210分钟，包括听写作翻译方法及模版、做两篇阅读、背作文模版；学习数学300分钟，看讲义第三章六个题型并做例题。"
     }
   ],
-  "weeklyReview": null,
-  "weeklyReviews": []
+  "weeklyReview": {
+    "summary": "本周英语围绕听力、阅读和写作翻译方法展开，进行了多套听力与阅读练习，并背诵作文模版。数学集中学习讲义题型与例题，完成多章练习题，并推进不定积分强化训练。",
+    "suggestions": [
+      {
+        "type": "study",
+        "text": "下周可继续安排英语听力与阅读练习，并保持单词和作文模版的复习，巩固本周涉及的写作翻译方法。"
+      },
+      {
+        "type": "study",
+        "text": "下周可继续推进数学不定积分强化训练，并结合已学章节的题型与例题做对应练习。"
+      },
+      {
+        "type": "rest",
+        "text": "下周按实际情况留出休息时间，保持学习与休息的平衡。"
+      }
+    ],
+    "id": "2026-11-16-1eda2552b1037711",
+    "start": "2026-11-16",
+    "end": "2026-11-22",
+    "nextWeekStart": "2026-11-23",
+    "generatedAt": "2026-11-25T14:39:38.472033+08:00",
+    "recordedDays": 5,
+    "subjectMinutes": {
+      "english": 900,
+      "theory": 0,
+      "practice": 0,
+      "math": 1980
+    },
+    "totalMinutes": 2880,
+    "hasUnknownTime": false
+  },
+  "weeklyReviews": [
+    {
+      "summary": "本周英语围绕听力、阅读和写作翻译方法展开，进行了多套听力与阅读练习，并背诵作文模版。数学集中学习讲义题型与例题，完成多章练习题，并推进不定积分强化训练。",
+      "suggestions": [
+        {
+          "type": "study",
+          "text": "下周可继续安排英语听力与阅读练习，并保持单词和作文模版的复习，巩固本周涉及的写作翻译方法。"
+        },
+        {
+          "type": "study",
+          "text": "下周可继续推进数学不定积分强化训练，并结合已学章节的题型与例题做对应练习。"
+        },
+        {
+          "type": "rest",
+          "text": "下周按实际情况留出休息时间，保持学习与休息的平衡。"
+        }
+      ],
+      "id": "2026-11-16-1eda2552b1037711",
+      "start": "2026-11-16",
+      "end": "2026-11-22",
+      "nextWeekStart": "2026-11-23",
+      "generatedAt": "2026-11-25T14:39:38.472033+08:00",
+      "recordedDays": 5,
+      "subjectMinutes": {
+        "english": 900,
+        "theory": 0,
+        "practice": 0,
+        "math": 1980
+      },
+      "totalMinutes": 2880,
+      "hasUnknownTime": false
+    }
+  ]
 };
